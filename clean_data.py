@@ -6,8 +6,9 @@ import seaborn as sns
 
 #Exploratory data analysis
 data_original = pd.read_csv('messy_population_data.csv')
-print(data_original.describe(include='all'))
+print(data_original.describe())
 print(data_original.info())
+
 #Details by column 
 column_names = data_original.columns
 print(column_names)
@@ -85,7 +86,13 @@ print(year_max)
 print("Shape after:", data_original.shape)
 
 #Summary statistics of dataset after cleaning
-print(data_original.describe(include='all'))
+print(data_original.describe())
+unique_pop = data_original['population'].nunique()
+print(unique_pop)
+unique_age = data_original['age'].nunique()
+print(unique_age)
+unique_year = data_original['age'].nunique()
+print(unique_year)
 
 #Saving cleaned dataset
 data_original.to_csv('cleaned_population_data.csv', index=False)

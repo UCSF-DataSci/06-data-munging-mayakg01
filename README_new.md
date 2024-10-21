@@ -139,10 +139,10 @@ data_original = data_original[(data_original['year'] <= year_max)]
 | Column Name   | Data Type | Non-Null Count | #Unique Values |  Mean  |
 |---------------|-----------|----------------|----------------|--------|
 |[income_groups]| [object]  | [50997]        | [4]            | [NaN]  |
-| [age]         | [float]   | [50997]        | [NaN]          | 50.3597 |
+| [age]         | [float]   | [50997]        | [101]          | 50.3597|
 | [gender]      | [object]  | [50997]        | [2]            | [NaN]  |
-| [year]        | [int]     | [50997]        | [NaN]          |1986.842|
-| [population]  | [float]   | [50997]        | [NaN]          |6.258013e+06|
+| [year]        | [int]     | [50997]        | [101]          |1986.842|
+| [population]  | [float]   | [50997]        | [47667]        |6.258013e+06|
 
 ### Summary of Changes
 - missing values filled in (numeric) and removed (categorical)
